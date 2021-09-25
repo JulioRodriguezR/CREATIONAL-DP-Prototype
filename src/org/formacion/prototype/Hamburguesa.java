@@ -15,17 +15,12 @@ public class Hamburguesa {
 	private final Pan pan;
 	private final List<Extra> extras;
 	
-	// --- constructor general
-	
 	public Hamburguesa(Carne carne, Size size, Pan pan, Extra ... extras) {
 		this.carne = carne;
 		this.size = size;
 		this.pan = pan;
 		this.extras = Arrays.asList(extras);
 	}
-
-	// -- accesos / modificaciones
-	
 	
 	public Carne getCarne() {
 		return carne;
