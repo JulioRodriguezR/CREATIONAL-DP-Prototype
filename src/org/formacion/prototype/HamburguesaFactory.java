@@ -29,7 +29,7 @@ public class HamburguesaFactory implements Cloneable {
 	}
 	
 //	@Override
-//	public Object clone() {
+//	public HamburguesaFactory clone() {
 //		try {
 //			return (HamburguesaFactory) super.clone();
 //		} catch (CloneNotSupportedException e) {
