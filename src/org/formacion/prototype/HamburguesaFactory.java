@@ -8,7 +8,7 @@ import org.formacion.prototype.Hamburguesa.Extra;
 import org.formacion.prototype.Hamburguesa.Pan;
 import org.formacion.prototype.Hamburguesa.Size;
 
-public class HamburguesaFactory {
+public class HamburguesaFactory implements Cloneable {
 
 	private Carne carne;
 	private Size size;
@@ -27,6 +27,15 @@ public class HamburguesaFactory {
 		factory.extras = original.getExtras();
 		return factory;
 	}
+	
+//	@Override
+//	public Object clone() {
+//		try {
+//			return (HamburguesaFactory) super.clone();
+//		} catch (CloneNotSupportedException e) {
+//			throw new AssertionError();
+//		}
+//	}
 	
 	public HamburguesaFactory setCarne(Carne carne) {
 		this.carne = carne;
